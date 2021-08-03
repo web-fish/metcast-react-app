@@ -9,7 +9,7 @@ function App() {
   const [dataWeather, setDataWeather] = useState([]);
 
   useEffect(() => {
-    fetch("http://api.openweathermap.org/data/2.5/forecast?id=524894&appid=d8b06030932a75f45f391fe3b9b00856&units=metric&lang=ru")
+    fetch("https://api.openweathermap.org/data/2.5/forecast?id=524894&appid=d8b06030932a75f45f391fe3b9b00856&units=metric&lang=ru")
       .then(res => res.json())
       .then(
         (result) => {
