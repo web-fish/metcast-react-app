@@ -1,0 +1,25 @@
+$maxWidth: 1200;
+
+@mixin mediafonts($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize * 0.7;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin paddingTop($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize * 0.7;
+  $maxWidth: $maxWidth - 320;
+  padding-top: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin padding($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize * 0.7;
+  $maxWidth: $maxWidth - 320;
+  padding: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin marginBottom($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize * 0.7;
+  $maxWidth: $maxWidth - 320;
+  margin-bottom: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}

@@ -1,0 +1,23 @@
+.header {
+  background-color: rgb(219, 112, 105);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 900;
+    padding: 15px 0;
+    @include _769 {
+      @include mediafonts(24, 12);
+      @include padding(15, 10);
+    }
+  }
+}

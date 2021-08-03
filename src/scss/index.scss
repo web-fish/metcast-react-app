@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./template.scss";
+@import "./mediaquery.scss";
+@import "./adaptive.scss";
+@import "../Components/Header/Header.scss";
+@import "../Components/WeatherCard/WeatherCard.scss";
+
+body {
+  font-family: -apple-system, Montserrat, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 80px;
+  @include _769 {
+    @include paddingTop(80, 50);
+  }
+}
+.app {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}

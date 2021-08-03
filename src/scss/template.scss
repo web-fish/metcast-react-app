@@ -1,0 +1,17 @@
+// Чтобы применить эти стили к элементу, используется директива @extend %title
+
+%title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+%subtitle {
+  font-weight: 400;
+}
+
+%button {
+  color: $white_color;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: 500;
+}
